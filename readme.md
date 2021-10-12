@@ -16,18 +16,8 @@ Explain what is your project here, what does it do, etc.
 ## Challenges
 
 #### I have trouble with 
-
-My code looked like this
-
-```js
-console.log("hello")
-```
-
-It was a giving me a problem... when it was fixed it looked like this:
-
-```js
-console.log("goodbye")
-```
+    Creating and formatting the framework for the entire quiz.  My css skills needed a bit more sharpening but ultimately it looks great to me.
+    The header and flex were giving me problems.  The spacing and margins between the header elements were a bit annoying but ultimately I found the best way to solve it was to put them all in the same div to space them out better.  Struggling understanding
 
 #### Example Table
 

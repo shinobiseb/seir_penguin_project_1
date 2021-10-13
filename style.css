@@ -2,13 +2,15 @@ body {
     color: white;
     background-color: black;
     font-family: 'Oxygen', sans-serif;
+    background-image: url();
 }
 
 h1 {
     font-family: 'Bangers', cursive;
     text-align: center;
     color: white;
-
+    animation-name: title;
+    animation-iteration-count: 1;
 }
 
 #question {
@@ -19,11 +21,12 @@ h1 {
     margin: 10px auto;
     font-family: 'Bangers', cursive;
     font-size: 2em;
+    justify-content: center;
 }
 
 .img {
     width: 70%;
-    height: 250px;
+    height: 400px;
     display: flex;
     color: white;
     margin: 10px auto;
@@ -58,12 +61,39 @@ h1 {
 }
 
 #answer ul li {
-    width: 40%;
-    height: 30px;
+    width: 30%;
+    height: 20px;
     padding: 20px;
     text-align: center;
     background-color: #3333;
     border-radius: 5px;
     margin: 5px 5px;
-    border: gray solid #4444;
+    border: black;
+    transition: box-shadow .4s ease-out
+}
+
+#reset {
+    height: 20px;
+    width: 50px;
+    background-color: #4444;
+    border: rgba(0, 0, 0, 0.067) solid;
+    border-radius: 7px;
+    display: flex;
+    margin: 0px 49.5%;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+}
+
+li:hover {
+    box-shadow: inset 400px 0 0 0 #9999;
+    transform: translate(5px);
+}
+
+@keyframes title {
+    from {
+        opacity: 100;
+    }
+    to {
+        opacity: 0;
+    }
 }

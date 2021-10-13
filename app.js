@@ -22,13 +22,18 @@ const $c = $("#c")
 const $d = $("#d")
 const $p1score = $("#p1 h4")
 const $p2score = $("#p2 h4")
+const $reset = $("#reset")
 
 /////////////////
 //Functions
 /////////////////
+const reset = () => {
+    location.reload()
+}
+
+$reset.on("click", reset)
 
 const chooseAnswer = (event, question) => {
-    console.log(event)
     if(event.target.innerText === question.answer) {
         
         if (state.which){

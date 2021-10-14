@@ -41,11 +41,23 @@ const chooseAnswer = (event, question) => {
         if (state.which){
             
             state.player1++
+            if(state.player1 === 5) {
+                $(".modal1").css("display", "flex")
+                $("#overlay").css("display", "flex")
+            }
             state.which = !state.which
         }
         else {
             state.player2++
+            if (state.player2 === 5) {
+                {
+                $(".modal2").css("display", "flex")
+                $("#overlay").css("display", "flex")
+            }
+            }
+            else{
             state.which = !state.which
+            }
         }
         setBoard(questions)
     }
@@ -53,11 +65,33 @@ const chooseAnswer = (event, question) => {
         setBoard(questions)
         state.which = !state.which
     }
+    if (state.which === true) {
+        $("#turn").text("Player 1's Turn")
+    }
+    else {
+        $("#turn").text("Player 2's Turn")
+    }
 }
 
 const setBoard = (q) => {
+
+//     const questionsArray = []
+//     // have we asked this question already?
+// if(questionsArray.includes(questionName)) {
+//   // If so, stop the function here.
+//   return
+// }
+// else {
+//   // If we haven't asked it before we'll add it to the array to keep track of question we have asked, and continue on as normal
+//   questionsArray.push(questionName)
+// }
+
     const randomIndex = Math.floor(Math.random() * q.length)
-    const randomQuestion = q[randomIndex]
+    const randomQuestion = q.splice(randomIndex, 1)[0]
+    // console.log(randomQuestion)
+    // const randomQuestion = q[randomIndex]
+    // const questionToAsk = questionsArray.splice(randomNumberBasedOnQuestionArrayLength, 1);
+   
     //Update Question
     $question.text(randomQuestion.question)
     $a.text(randomQuestion.a)
@@ -69,6 +103,7 @@ const setBoard = (q) => {
     //update player scores
     $p1score.text(state.player1)
     $p2score.text(state.player2)
+    
 
     $("li").off()
     $("li").on("click", (event) => {

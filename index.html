@@ -12,17 +12,36 @@
     <link rel="stylesheet" href="style.css">
     <title>Superhero Quiz by Seb</title>
 </head>
-<body>
+<body id="gameBody">
+    <div id="modal" class="modal1">
+        <div id="insideModal" class="insideModal"> <H1 class="victory">PLAYER 1 WINS!</H1></div>
+        <div id="playAgain">
+    <a href="./home.html" id="home">Again?</a>
+    </div>
+    </div>
+        <div id="modal" class="modal2">
+        <div id="insideModal" class="insideModal"> <H1 class="victory">PLAYER 2 WINS!</H1></div>
+        <div id="playAgain">
+    <a href="./home.html" id="home">Again?</a>
+    </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div id="homeButton">
+    <a href="./home.html" id="home">home</a>
+    </div>
      <div id="scores">
         <div id="p1">
             <h3>Player 1</h3>
             <h4>0</h4>
             </div>
-        <h1>Superheroes Quiz</h1>
+        <h1>Superhero Quiz</h1>
         <div id="p2">
             <h3>Player 2</h3>
             <h4>0</h4>
             </div>
+    </div>
+    <div id="turn">Player 1's Turn
     </div>
     <div class="img"></div>
     <div id="question">QUESTION</div>
@@ -34,7 +53,7 @@
             <li id="d">Answer D</li>
         </ul>
     </div>
-    <button id = "reset">Reset</button>
-
+    <!-- <button id = "reset">Reset</button> -->
+    
 </body>
 </html>

@@ -27,10 +27,14 @@ My project is a quiz about Superheroes from comics with a superhero aesthetic.  
 
     My answers boxes were constantly being updated due to issues with compatiability of effects I used on top of each other as well.
 
-    My site is mobile friendly however the pictures don't always line up correctly and it's been difficult trying to line them up all at their focal point.  I should've used more centered pictures
+    My site is mobile friendly however the pictures don't always line up correctly and it's been difficult trying to line them up all at their focal point.  I should've used more centered pictures.
 
 ###The good parts
 
     The media query usage was actually somewhat fun when dealing with a certain phone type.  It felt like creating a new site essentially with these new limitations that made me feel more likely to try new things.
 
     The look of the page is very reminiscent of older superhero comics.  I wished I made the header a bit more interesting but I think it does its job as of right now.
+
+    The turn indicator was so ridiculously simple, and I had no idea how to approach it until I stopped over thinking it.
+
+    When I finally relearned how to add animations to changing properties everything became so much easier and clearer to do as well.  I changed multiple elements to smoothly change size with animations

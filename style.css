@@ -3,7 +3,7 @@ body {
     background-color: black;
     font-family: 'Oxygen', sans-serif;
     background-color: #1d1d1d;
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='2'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right, #FB5607 0%, rgb(0, 0, 0) 100%);
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='2'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right, #FB5607 0%, rgb(255, 0, 98) 100%);
 }
 
 h1 {
@@ -12,6 +12,7 @@ h1 {
     color: white;
     animation-name: title;
     animation-iteration-count: 1;
+    text-shadow: 4px 4px #000000;
 }
 
 #question {
@@ -23,11 +24,13 @@ h1 {
     font-family: 'Bangers', cursive;
     font-size: 2em;
     justify-content: center;
+    margin-top: 40px;
+    text-shadow: 4px 4px #000000;
 }
 
 .img {
     width: 70%;
-    height: 400px;
+    height: 500px;
     display: flex;
     color: rgb(255, 255, 255);
     margin: 10px auto;
@@ -39,11 +42,18 @@ h1 {
     font-family: 'Bangers', cursive;
     justify-content: space-around;
     width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 7px;
+}
+
+#p1 {
+    text-shadow: 2px 2px #000000;
 }
 
 #p2 {
     align-items: flex-end;
     text-align: right;
+    text-shadow: 2px 2px #000000;
 }
 
 #answer {
@@ -59,7 +69,7 @@ h1 {
     justify-content: center;
     list-style: none;   
     width: 70%;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 #answer ul li {
@@ -67,18 +77,16 @@ h1 {
     height: 20px;
     padding: 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     margin: 5px 5px;
     border: black;
-    transition: box-shadow .4s ease-out;
     box-shadow: 5px 5px 0px rgb(0, 0, 0);
 }
 
 #reset {
     height: 20px;
     width: 50px;
-    background-color: #4444;
     border: rgba(0, 0, 0, 0.067) solid;
     border-radius: 7px;
     display: flex;
@@ -86,20 +94,83 @@ h1 {
     font-family: 'Bangers', cursive;
     text-align: center;
     transition: 250ms;
+    box-shadow: 5px 5px 0px rgb(82, 82, 82);
 }
 
 #reset:hover {
-    background-color: rgba(187, 187, 187, 0.267);
+    background-color: rgba(0, 0, 0, 0.267);
 }
 
 li:hover {
+    transition: ease .5s;
+    transform: scale(1.05);
+}
+
+/* 
+li:hover {
     box-shadow: inset 430px 0 0 0 #9999;
     transform: translate(5px);
-}
+    transform: scale(1.1)
+} */
 
 .img {
     background-image: url("https://www.fantasybookreview.co.uk/blog/wp-content/uploads/2020/06/superheroes.jpg");
     background-position: top;
-    background-size: auto;
+    background-size: cover;
     box-shadow: 10px 10px 0px rgb(0, 0, 0);
+    
+}
+
+@media only screen and (max-width:320px) { 
+    h1 {
+        font-size: 1em;
+    }
+
+    #scores {
+        height: 40px;
+        display: inline-flex;
+    }
+
+    h3 {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    h4 {
+        font-size: 12px;
+        margin-top: -10px;
+    }
+
+    .img {
+        height: 200px;
+        width: 90%;
+    }
+
+    #question {
+        font-size: 1.5em;
+        text-shadow: 1px 1px black;
+        margin: 2px auto;
+    }
+
+    #answer {
+        font-size: 10px;
+        padding: 0px 0px;
+    }
+    ul{
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    li {
+        padding: 5px;
+        margin: 0px;
+    }
+    #answer ul li {
+        padding: 15px;
+    }
+    #reset {
+        margin: 30px auto;
+        height: 15px;
+        font-size: 10px;
+        text-align: center;
+    }
 }

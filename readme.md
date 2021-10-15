@@ -28,7 +28,7 @@ My answers boxes were constantly being updated due to issues with compatiability
 
 My site is mobile friendly however the pictures don't always line up correctly and it's been difficult trying to line them up all at their focal point.  I should've used more centered pictures.
 
-###The good parts
+### The good parts
 
 The media query usage was actually somewhat fun when dealing with a certain phone type.  It felt like creating a new site essentially with these new limitations that made me feel more likely to try new things.
 

@@ -49,7 +49,7 @@ const chooseAnswer = (event, question) => {
         }
         else {
             state.player2++
-            if (state.player2 === 5) {
+            if (state.player2 === 1) {
                 {
                 $(".modal2").css("display", "flex")
                 $("#overlay").css("display", "flex")

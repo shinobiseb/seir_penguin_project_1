@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Oxygen&display=swap');
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Superhero Quiz by Seb</title>
+</head>
+<body id="gameBody">
+    <div id="modal" class="modal1">
+        <div id="insideModal" class="insideModal"> <H1 class="victory">PLAYER 1 WINS!</H1></div>
+        <div id="playAgain">
+    <a href="./index.html" id="home">Again?</a>
+    </div>
+    </div>
+        <div id="modal" class="modal1">
+        <div id="insideModal" class="insideModal"> <H1 class="victory">PLAYER 1 WINS!</H1></div>
+        <div id="playAgain">
+    <a href="./index.html" id="home">Again?</a>
+    </div>
+    </div>
+    <div id="overlay"></div>
+
+
+     <div id="scores">
+        <div id="p1">
+            <h3>Player 1</h3>
+            <h4>0</h4>
+            </div>
+        <h1>Superhero Quiz</h1>
+        <div id="p2">
+            <h3>Player 2</h3>
+            <h4>0</h4>
+            </div>
+    </div>
+    <div id="turn">Player 1's Turn
+    </div>
+    <div class="img"></div>
+    <div id="question">QUESTION</div>
+    <div id="answer">
+        <ul>
+            <li id="a">Answer A</li>
+            <li id="b">Answer B</li>
+            <li id="c">Answer C</li>
+            <li id="d">Answer D</li>
+        </ul>
+    </div>
+    <!-- <button id = "reset">Reset</button> -->
+        <div id="homeButton">
+    <a href="./index.html" id="home">home</a>
+    </div>
+</body>
+</html>
